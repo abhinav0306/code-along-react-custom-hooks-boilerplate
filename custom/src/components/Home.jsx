@@ -1,5 +1,5 @@
 import React from 'react'
-import UseStorage from './useStorage'
+import UseStorage from './UseStorage.jsx'
 import "./home.css"
 const Home = () => {
     const [inputValue, setInputValue] = UseStorage("inputValue");
