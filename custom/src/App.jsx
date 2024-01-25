@@ -1,9 +1,11 @@
-import React from 'react'
-import Home from "./components/Home"
+import useStorage from './CustomHooks/UseStorage'
 const App = () => {
+  const {setStorage}=useStorage()
   return (
     <>
-    <Home/>
+    <div>
+      <input type="text" name="" id="" placeholder='Enter text' onChange={(e)=>setStorage(e.target.value)}/>
+    </div>
     </>
   )
 }
